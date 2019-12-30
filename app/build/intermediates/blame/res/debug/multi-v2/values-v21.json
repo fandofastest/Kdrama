@@ -1,8 +1,27 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\Degenius\\oxoo\\ANDROID\\ANDROID-SOUCE-CODE\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v21\\values-v21.xml",
+            "outputFile": "D:\\TEAM7\\Kdrama\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v21\\values-v21.xml",
             "map": [
+                {
+                    "source": "D:\\TEAM7\\Kdrama\\app\\src\\main\\res\\values-v21\\styles.xml",
+                    "from": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "59",
+                        "endLines": "7",
+                        "endColumns": "12",
+                        "endOffsets": "353"
+                    },
+                    "to": {
+                        "startLines": "17",
+                        "startColumns": "4",
+                        "startOffsets": "1263",
+                        "endLines": "21",
+                        "endColumns": "12",
+                        "endOffsets": "1553"
+                    }
+                },
                 {
                     "source": "C:\\Users\\FANDO\\.gradle\\caches\\transforms-2\\files-2.1\\886df16c747a87ca7b380bdbaa998077\\media-1.0.0\\res\\values-v21\\values-v21.xml",
                     "from": {
@@ -58,25 +77,6 @@
                         "endLines": "22,23,24,25,26,27,28,29,30,31,32,33,34,36,38,39,40,41,43,45,46,47,48,49,51,53,55,57,59,61,62,67,69,71,72,73,75,77,78,79,80,81,82,128,131,174,177,180,182,184,186,189,193,196,197,198,201,202,203,204,205,206,209,210,212,214,216,218,222,224,225,226,227,229,233,235,237,238,239,240,241,242,244,274,275,285,286,287,299,311",
                         "endColumns": "90,102,102,104,106,108,108,108,108,108,106,102,118,12,12,104,120,100,12,12,102,118,106,102,12,12,12,12,12,12,118,12,12,12,111,146,12,12,74,88,86,100,102,12,12,12,12,12,12,12,12,12,12,12,88,110,12,100,94,122,128,116,12,98,12,12,12,12,12,12,92,110,55,12,12,12,12,94,90,90,92,116,12,70,82,12,56,57,12,12",
                         "endOffsets": "1644,1747,1850,1955,2062,2171,2280,2389,2498,2607,2714,2817,2936,3091,3246,3351,3472,3573,3720,3861,3964,4083,4190,4293,4448,4619,4768,4933,5090,5241,5360,5711,5860,6009,6121,6268,6421,6568,6643,6732,6819,6920,7023,10210,10395,13381,13578,13777,13900,14023,14136,14319,14574,14775,14864,14975,15208,15309,15404,15527,15656,15773,15950,16049,16184,16327,16462,16581,16782,16901,16994,17105,17161,17268,17463,17574,17707,17802,17893,17984,18077,18194,18333,20667,20750,21430,21487,21545,22239,22945"
-                    }
-                },
-                {
-                    "source": "D:\\Degenius\\oxoo\\ANDROID\\ANDROID-SOUCE-CODE\\app\\src\\main\\res\\values-v21\\styles.xml",
-                    "from": {
-                        "startLines": "3",
-                        "startColumns": "4",
-                        "startOffsets": "59",
-                        "endLines": "7",
-                        "endColumns": "12",
-                        "endOffsets": "353"
-                    },
-                    "to": {
-                        "startLines": "17",
-                        "startColumns": "4",
-                        "startOffsets": "1263",
-                        "endLines": "21",
-                        "endColumns": "12",
-                        "endOffsets": "1553"
                     }
                 },
                 {

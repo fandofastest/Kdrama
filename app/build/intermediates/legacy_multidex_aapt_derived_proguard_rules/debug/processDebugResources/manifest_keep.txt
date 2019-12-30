@@ -1,4 +1,4 @@
-# Referenced at D:\Degenius\oxoo\ANDROID\ANDROID-SOUCE-CODE\app\build\intermediates\merged_manifests\debug\AndroidManifest.xml:61
+# Referenced at D:\TEAM7\Kdrama\app\build\intermediates\merged_manifests\debug\AndroidManifest.xml:61
 -keep class androidx.core.app.CoreComponentFactory { <init>(); }
-# Referenced at D:\Degenius\oxoo\ANDROID\ANDROID-SOUCE-CODE\app\build\intermediates\merged_manifests\debug\AndroidManifest.xml:61
--keep class com.kdrama.app.utl.MyAppClass { <init>(); }
+# Referenced at D:\TEAM7\Kdrama\app\build\intermediates\merged_manifests\debug\AndroidManifest.xml:61
+-keep class com.kdrama.app.kr_utl.MyAppClass { <init>(); }

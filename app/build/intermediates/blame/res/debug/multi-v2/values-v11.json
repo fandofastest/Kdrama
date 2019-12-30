@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\Degenius\\oxoo\\ANDROID\\ANDROID-SOUCE-CODE\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v11\\values-v11.xml",
+            "outputFile": "D:\\TEAM7\\Kdrama\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v11\\values-v11.xml",
             "map": [
                 {
                     "source": "C:\\Users\\FANDO\\.gradle\\caches\\transforms-2\\files-2.1\\d649f492592e73786edf75dbb2404e0d\\jetified-ccl-2.8.4\\res\\values-v11\\values-v11.xml",
