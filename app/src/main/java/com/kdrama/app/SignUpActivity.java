@@ -14,10 +14,10 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import com.google.firebase.analytics.FirebaseAnalytics;
-import com.kdrama.app.net.RetrofitClient;
-import com.kdrama.app.net.apis.SignUpApi;
-import com.kdrama.app.net.model.User;
-import com.kdrama.app.utl.ToastMsg;
+import com.kdrama.app.kr_network.RetrofitClient;
+import com.kdrama.app.kr_network.apis.SignUpApi;
+import com.kdrama.app.kr_network.model.User;
+import com.kdrama.app.kr_utl.ToastMsg;
 
 import retrofit2.Call;
 import retrofit2.Callback;

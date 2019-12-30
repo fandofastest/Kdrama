@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.kdrama.app"
+    package="com.chinesedrama.app"
     android:targetSandboxVersion="2"
     android:versionCode="1"
     android:versionName="1.0.0" >
@@ -24,10 +24,10 @@
     <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- Create a unique permission for your app and use it so only your app can receive your OneSignal messages. -->
     <permission
-        android:name="com.kdrama.app.permission.C2D_MESSAGE"
+        android:name="com.chinesedrama.app.permission.C2D_MESSAGE"
         android:protectionLevel="signature" />
 
-    <uses-permission android:name="com.kdrama.app.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.chinesedrama.app.permission.C2D_MESSAGE" />
     <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" /> <!-- Required, makes sure notifications are delivered on time. -->
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <!--
@@ -60,7 +60,7 @@
     <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
 
     <application
-        android:name="com.kdrama.app.utl.MyAppClass"
+        android:name="com.chinesedrama.app.cn_utl.MyAppClass"
         android:allowBackup="true"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:debuggable="true"
@@ -68,11 +68,10 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:testOnly="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true" >
         <activity
-            android:name="com.kdrama.app.WebViewActivity"
+            android:name="com.chinesedrama.app.WebViewActivity"
             android:screenOrientation="landscape"
             android:theme="@style/FullscreenTheme" />
 
@@ -87,49 +86,49 @@
             android:value="com.google.android.exoplayer2.ext.cast.DefaultCastOptionsProvider" />
 
         <activity
-            android:name="com.kdrama.app.TermsActivity"
+            android:name="com.chinesedrama.app.TermsActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.Nobar" />
         <activity
-            android:name="com.kdrama.app.ReplyActivity"
+            android:name="com.chinesedrama.app.ReplyActivity"
             android:label="@string/title_activity_reply"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.kdrama.app.ProfileActivity"
+            android:name="com.chinesedrama.app.ProfileActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.Nobar" />
         <activity
-            android:name="com.kdrama.app.PassResetActivity"
+            android:name="com.chinesedrama.app.PassResetActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.Nobar" />
         <activity
-            android:name="com.kdrama.app.SearchActivity"
+            android:name="com.chinesedrama.app.SearchActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.Nobar" />
         <activity
-            android:name="com.kdrama.app.SignUpActivity"
+            android:name="com.chinesedrama.app.SignUpActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.Nobar" />
         <activity
-            android:name="com.kdrama.app.LoginActivity"
+            android:name="com.chinesedrama.app.LoginActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.Nobar" />
         <activity
-            android:name="com.kdrama.app.DetailsActivity"
+            android:name="com.chinesedrama.app.DetailsActivity"
             android:configChanges="screenLayout|screenSize|orientation"
             android:label="@string/title_activity_details"
             android:theme="@style/AppTheme.NoActionBar" /> <!-- android:configChanges="screenLayout|screenSize|orientation" -->
         <activity
-            android:name="com.kdrama.app.MainActivity"
+            android:name="com.chinesedrama.app.MainActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.Nobar"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name="com.kdrama.app.SettingsActivity"
+            android:name="com.chinesedrama.app.SettingsActivity"
             android:theme="@style/AppTheme.Nobar" />
         <activity
-            android:name="com.kdrama.app.SplashscreenActivity"
+            android:name="com.chinesedrama.app.SplashscreenActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:screenOrientation="portrait"
             android:theme="@style/FullscreenTheme" >
@@ -140,19 +139,19 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.kdrama.app.ItemMovieActivity"
+            android:name="com.chinesedrama.app.ItemMovieActivity"
             android:label="@string/title_activity_item_show"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.kdrama.app.ItemTVActivity"
+            android:name="com.chinesedrama.app.ItemTVActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.Nobar" />
         <activity
-            android:name="com.kdrama.app.ItemSeriesActivity"
+            android:name="com.chinesedrama.app.ItemSeriesActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.Nobar" />
-        <activity android:name="com.kdrama.app.UpdateActivity" />
+        <activity android:name="com.chinesedrama.app.UpdateActivity" />
 
         <receiver
             android:name="com.google.android.gms.cast.framework.media.MediaIntentReceiver"
@@ -176,7 +175,7 @@
             <intent-filter android:priority="999" >
                 <action android:name="com.google.android.c2dm.intent.RECEIVE" />
 
-                <category android:name="com.kdrama.app" />
+                <category android:name="com.chinesedrama.app" />
             </intent-filter>
         </receiver>
         <receiver android:name="com.onesignal.NotificationOpenedReceiver" />
@@ -238,7 +237,7 @@
 
         <provider
             android:name="com.facebook.ads.AudienceNetworkContentProvider"
-            android:authorities="com.kdrama.app.AudienceNetworkContentProvider"
+            android:authorities="com.chinesedrama.app.AudienceNetworkContentProvider"
             android:exported="false" />
         <!--
              FirebaseMessagingService performs security checks at runtime,
@@ -294,7 +293,7 @@
 
         <provider
             android:name="com.google.android.gms.ads.MobileAdsInitProvider"
-            android:authorities="com.kdrama.app.mobileadsinitprovider"
+            android:authorities="com.chinesedrama.app.mobileadsinitprovider"
             android:exported="false"
             android:initOrder="100" />
 
@@ -320,7 +319,7 @@
 
         <provider
             android:name="com.google.firebase.provider.FirebaseInitProvider"
-            android:authorities="com.kdrama.app.firebaseinitprovider"
+            android:authorities="com.chinesedrama.app.firebaseinitprovider"
             android:exported="false"
             android:initOrder="100" />
 
@@ -335,7 +334,7 @@
 
         <provider
             android:name="com.squareup.picasso.PicassoProvider"
-            android:authorities="com.kdrama.app.com.squareup.picasso"
+            android:authorities="com.chinesedrama.app.com.squareup.picasso"
             android:exported="false" />
 
         <activity

@@ -16,11 +16,11 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonArrayRequest;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.google.firebase.analytics.FirebaseAnalytics;
-import com.kdrama.app.adt.ReplyAdapter;
-import com.kdrama.app.mdl.CommentsModel;
-import com.kdrama.app.utl.ApiResources;
-import com.kdrama.app.utl.ToastMsg;
-import com.kdrama.app.utl.VolleySingleton;
+import com.kdrama.app.kr_adapter.ReplyAdapter;
+import com.kdrama.app.kr_model.CommentsModel;
+import com.kdrama.app.kr_utl.ApiResources;
+import com.kdrama.app.kr_utl.ToastMsg;
+import com.kdrama.app.kr_utl.VolleySingleton;
 
 import org.json.JSONArray;
 import org.json.JSONException;

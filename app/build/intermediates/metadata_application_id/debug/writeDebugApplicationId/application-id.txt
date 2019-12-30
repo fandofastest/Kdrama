@@ -1,1 +1,1 @@
-com.kdrama.app
+com.chinesedrama.app

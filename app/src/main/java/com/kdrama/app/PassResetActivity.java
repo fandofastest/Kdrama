@@ -12,10 +12,10 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import com.google.firebase.analytics.FirebaseAnalytics;
-import com.kdrama.app.net.RetrofitClient;
-import com.kdrama.app.net.apis.PassResetApi;
-import com.kdrama.app.net.model.PasswordReset;
-import com.kdrama.app.utl.ToastMsg;
+import com.kdrama.app.kr_network.RetrofitClient;
+import com.kdrama.app.kr_network.apis.PassResetApi;
+import com.kdrama.app.kr_network.model.PasswordReset;
+import com.kdrama.app.kr_utl.ToastMsg;
 
 import retrofit2.Call;
 import retrofit2.Callback;
