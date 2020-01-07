@@ -253,6 +253,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                             Intent intent=new Intent(MainActivity.this,SettingsActivity.class);
                             startActivity(intent);
                             MainActivity.this.finish();
+                        }else if (position==10){
+                            String url = "https://api.whatsapp.com/send?phone=+6281275941178&text=Please help, I have a Problem  - Korean Drama User";
+                            Intent i = new Intent(Intent.ACTION_VIEW);
+                            i.setData(Uri.parse(url));
+                            startActivity(i);
                         }
                     }else {
                         if (position==6){
@@ -263,6 +268,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                             Intent intent=new Intent(MainActivity.this,SettingsActivity.class);
                             startActivity(intent);
                             MainActivity.this.finish();
+                        }else if (position==8){
+                            String url = "https://api.whatsapp.com/send?phone=+6281275941178&text=Please help, I have a Problem - Korean Drama User";
+                            Intent i = new Intent(Intent.ACTION_VIEW);
+                            i.setData(Uri.parse(url));
+                            startActivity(i);
                         }
                     }
 
@@ -437,7 +447,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             acceptBt.setBackground(getResources().getDrawable(R.drawable.btn_rounded_dark));
         }
 
-        ((ImageButton) dialog.findViewById(R.id.bt_close)).setOnClickListener(new View.OnClickListener() {
+        dialog.findViewById(R.id.bt_close).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 dialog.dismiss();
@@ -527,7 +537,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                         startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=" + appPackageName)));
                     } catch (android.content.ActivityNotFoundException anfe) {
                         startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=" + appPackageName)));
-                    };
+                    }
                 }
 
             }
