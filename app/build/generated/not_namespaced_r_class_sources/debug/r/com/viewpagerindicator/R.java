@@ -96,13 +96,13 @@ public final class R {
     public static final class drawable {
         private drawable() {}
 
-        public static final int vpi__tab_indicator = 0x7f0802a6;
-        public static final int vpi__tab_selected_focused_holo = 0x7f0802a7;
-        public static final int vpi__tab_selected_holo = 0x7f0802a8;
-        public static final int vpi__tab_selected_pressed_holo = 0x7f0802a9;
-        public static final int vpi__tab_unselected_focused_holo = 0x7f0802aa;
-        public static final int vpi__tab_unselected_holo = 0x7f0802ab;
-        public static final int vpi__tab_unselected_pressed_holo = 0x7f0802ac;
+        public static final int vpi__tab_indicator = 0x7f0802a7;
+        public static final int vpi__tab_selected_focused_holo = 0x7f0802a8;
+        public static final int vpi__tab_selected_holo = 0x7f0802a9;
+        public static final int vpi__tab_selected_pressed_holo = 0x7f0802aa;
+        public static final int vpi__tab_unselected_focused_holo = 0x7f0802ab;
+        public static final int vpi__tab_unselected_holo = 0x7f0802ac;
+        public static final int vpi__tab_unselected_pressed_holo = 0x7f0802ad;
     }
     public static final class id {
         private id() {}
