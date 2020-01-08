@@ -16,7 +16,7 @@ import android.webkit.WebViewClient;
 import android.widget.ProgressBar;
 
 import com.google.firebase.analytics.FirebaseAnalytics;
-import com.kdrama.app.utl.ApiResources;
+import com.kdrama.app.kr_utl.ApiResources;
 
 public class TermsActivity extends AppCompatActivity {
 

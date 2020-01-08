@@ -19,15 +19,15 @@ import android.widget.TextView;
 
 import com.facebook.shimmer.ShimmerFrameLayout;
 import com.google.firebase.analytics.FirebaseAnalytics;
-import com.kdrama.app.adt.LiveTvAdapter2;
-import com.kdrama.app.adt.SearchAdapter;
-import com.kdrama.app.net.RetrofitClient;
-import com.kdrama.app.net.apis.SearchApi;
-import com.kdrama.app.net.model.CommonModel;
-import com.kdrama.app.net.model.SearchModel;
-import com.kdrama.app.net.model.TvModel;
-import com.kdrama.app.utl.ApiResources;
-import com.kdrama.app.utl.ToastMsg;
+import com.kdrama.app.kr_adapter.LiveTvAdapter2;
+import com.kdrama.app.kr_adapter.SearchAdapter;
+import com.kdrama.app.kr_network.RetrofitClient;
+import com.kdrama.app.kr_network.apis.SearchApi;
+import com.kdrama.app.kr_network.model.CommonModel;
+import com.kdrama.app.kr_network.model.SearchModel;
+import com.kdrama.app.kr_network.model.TvModel;
+import com.kdrama.app.kr_utl.ApiResources;
+import com.kdrama.app.kr_utl.ToastMsg;
 
 import java.util.ArrayList;
 import java.util.List;

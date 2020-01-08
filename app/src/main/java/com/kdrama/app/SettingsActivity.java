@@ -16,7 +16,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.google.firebase.analytics.FirebaseAnalytics;
-import com.kdrama.app.utl.Tools;
+import com.kdrama.app.kr_utl.Tools;
 
 public class SettingsActivity extends AppCompatActivity {
 

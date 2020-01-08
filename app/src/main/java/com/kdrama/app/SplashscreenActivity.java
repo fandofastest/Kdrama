@@ -1,10 +1,13 @@
 package com.kdrama.app;
 
+import android.Manifest;
 import android.content.Intent;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.SharedPreferences;
+import android.os.Build;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -24,8 +27,7 @@ import com.facebook.ads.InterstitialAdListener;
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.ixidev.gdpr.GDPRChecker;
-import com.kdrama.app.utl.ApiResources;
-import com.kdrama.app.utl.Constants;
+import com.kdrama.app.kr_utl.ApiResources;
 import com.startapp.android.publish.adsCommon.StartAppAd;
 import com.startapp.android.publish.adsCommon.StartAppSDK;
 import com.startapp.android.publish.adsCommon.adListeners.AdDisplayListener;
@@ -33,8 +35,7 @@ import com.startapp.android.publish.adsCommon.adListeners.AdDisplayListener;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import static com.facebook.ads.AudienceNetworkAds.TAG;
-import static com.kdrama.app.utl.MyAppClass.getContext;
+import static com.kdrama.app.kr_utl.MyAppClass.getContext;
 
 
 public class SplashscreenActivity extends AppCompatActivity {
@@ -65,7 +66,14 @@ public class SplashscreenActivity extends AppCompatActivity {
         getAdDetails(new ApiResources().getAdDetails());
         getStatusapp(new ApiResources().getInfoApp());
 
-
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            if (!Settings.System.canWrite(this)) {
+                requestPermissions(new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE,
+                        Manifest.permission.READ_EXTERNAL_STORAGE}, 2909);
+            } else {
+            }
+        } else {
+        }
 
         //Toast.makeText(SplashscreenActivity.this, "login:"+ isLogedIn(), Toast.LENGTH_SHORT).show();
 //        Thread timer = new Thread() {
@@ -214,7 +222,7 @@ public class SplashscreenActivity extends AppCompatActivity {
 //                    Toast.makeText(getContext(),"coba"+interadmob,Toast.LENGTH_LONG).show();
 
                     new GDPRChecker()
-                            .withContext(getContext())
+                            .withContext(SplashscreenActivity.this)
                             .withPrivacyUrl(Config.TERMS_URL) // your privacy url
                             .withPublisherIds(ApiResources.adMobPublisherId) // your admob account Publisher id
                             .withTestMode("9424DF76F06983D1392E609FC074596C") // remove this on real project

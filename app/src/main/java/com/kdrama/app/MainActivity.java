@@ -43,19 +43,19 @@ import android.widget.Switch;
 import android.widget.TextView;
 
 import com.google.firebase.analytics.FirebaseAnalytics;
-import com.kdrama.app.adt.NavigationAdapter;
-import com.kdrama.app.frg.LiveTvFragment;
-import com.kdrama.app.frg.MoviesFragment;
-import com.kdrama.app.frg.TvSeriesFragment;
-import com.kdrama.app.mdl.NavigationModel;
-import com.kdrama.app.nav_f.CountryFragment;
-import com.kdrama.app.nav_f.FavoriteFragment;
-import com.kdrama.app.nav_f.GenreFragment;
-import com.kdrama.app.nav_f.MainHomeFragment;
-import com.kdrama.app.utl.ApiResources;
-import com.kdrama.app.utl.Constants;
-import com.kdrama.app.utl.SpacingItemDecoration;
-import com.kdrama.app.utl.Tools;
+import com.kdrama.app.kr_adapter.NavigationAdapter;
+import com.kdrama.app.kr_fragment.LiveTvFragment;
+import com.kdrama.app.kr_fragment.MoviesFragment;
+import com.kdrama.app.kr_fragment.TvSeriesFragment;
+import com.kdrama.app.kr_model.NavigationModel;
+import com.kdrama.app.kr_navfragmnet.CountryFragment;
+import com.kdrama.app.kr_navfragmnet.FavoriteFragment;
+import com.kdrama.app.kr_navfragmnet.GenreFragment;
+import com.kdrama.app.kr_navfragmnet.MainHomeFragment;
+import com.kdrama.app.kr_utl.ApiResources;
+import com.kdrama.app.kr_utl.Constants;
+import com.kdrama.app.kr_utl.SpacingItemDecoration;
+import com.kdrama.app.kr_utl.Tools;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -253,6 +253,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                             Intent intent=new Intent(MainActivity.this,SettingsActivity.class);
                             startActivity(intent);
                             MainActivity.this.finish();
+                        }else if (position==10){
+                            String url = "https://api.whatsapp.com/send?phone=+6281275941178&text=Please help, I have a Problem  - Korean Drama User";
+                            Intent i = new Intent(Intent.ACTION_VIEW);
+                            i.setData(Uri.parse(url));
+                            startActivity(i);
                         }
                     }else {
                         if (position==6){
@@ -263,6 +268,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                             Intent intent=new Intent(MainActivity.this,SettingsActivity.class);
                             startActivity(intent);
                             MainActivity.this.finish();
+                        }else if (position==8){
+                            String url = "https://api.whatsapp.com/send?phone=+6281275941178&text=Please help, I have a Problem - Korean Drama User";
+                            Intent i = new Intent(Intent.ACTION_VIEW);
+                            i.setData(Uri.parse(url));
+                            startActivity(i);
                         }
                     }
 
@@ -396,6 +406,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                         public void onClick(DialogInterface dialog, int which) {
                             dialog.dismiss();
                             finish();
+                            finishAffinity();
                             System.exit(0);
                         }
                     })
@@ -437,7 +448,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             acceptBt.setBackground(getResources().getDrawable(R.drawable.btn_rounded_dark));
         }
 
-        ((ImageButton) dialog.findViewById(R.id.bt_close)).setOnClickListener(new View.OnClickListener() {
+        dialog.findViewById(R.id.bt_close).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 dialog.dismiss();
@@ -527,7 +538,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                         startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=" + appPackageName)));
                     } catch (android.content.ActivityNotFoundException anfe) {
                         startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=" + appPackageName)));
-                    };
+                    }
                 }
 
             }

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ANDROID-SOUCE-CODE.iml" filepath="$PROJECT_DIR$/ANDROID-SOUCE-CODE.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Kdrama.iml" filepath="$PROJECT_DIR$/Kdrama.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

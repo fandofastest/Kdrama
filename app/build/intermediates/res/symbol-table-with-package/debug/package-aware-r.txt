@@ -1927,6 +1927,7 @@ drawable ic_brightness_3_black_24dp
 drawable ic_calendar_black_24dp
 drawable ic_cancel
 drawable ic_cast_connected_white
+drawable ic_chat_black_24dp
 drawable ic_clear_black_24dp
 drawable ic_clear_black_48dp
 drawable ic_clear_white_24dp
